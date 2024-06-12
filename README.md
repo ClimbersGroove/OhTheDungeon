@@ -8,7 +8,7 @@ Then modify POM at bottom:
 							<goal>shade</goal>
 						</goals>
 						<configuration>
-							<outputDirectory>C:\Users\maxsc\Desktop\Test Server\plugins</outputDirectory>
+							<outputDirectory>C:\Users\..................\Desktop\Test Server\plugins</outputDirectory>
 							<shadedArtifactAttached>true</shadedArtifactAttached>
 						</configuration>
 					</execution>
