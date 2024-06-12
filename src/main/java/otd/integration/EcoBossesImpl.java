@@ -98,19 +98,11 @@ public class EcoBossesImpl {
 	public static class EcoBossesOTDImpl implements BossOTD {
 		public Set<String> getMobNames() {
 			Set<String> res = new HashSet<>();
-			for (EcoBoss boss : Bosses.values()) {
-				String id = boss.getID();
-				res.add(id);
-			}
 			return res;
 		}
 
 		public Entity spawnMob(String type, Location loc) {
 			EcoBoss boss = Bosses.getByID(type);
-			if (boss != null) {
-				LivingEcoBoss e = boss.spawn(loc);
-				return e.getEntity();
-			}
 			return null;
 		}
 

@@ -127,10 +127,11 @@
 		<!-- -->
 		<dependency>
 			<groupId>com.willfp</groupId>
-			<artifactId>EcoBosses</artifactId>
+			<artifactId>Ecobosses</artifactId>
 			<version>9.50.0</version>
 			<scope>provided</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>com.sk89q.worldedit</groupId>
 			<artifactId>worldedit-bukkit</artifactId>
@@ -219,10 +220,14 @@
 				</configuration>
 				<executions>
 					<execution>
-						<phase>install</phase>
+						<phase>package</phase>
 						<goals>
 							<goal>shade</goal>
 						</goals>
+						<configuration>
+							<outputDirectory>C:\Users\maxsc\Desktop\Test Server\plugins</outputDirectory>
+							<shadedArtifactAttached>true</shadedArtifactAttached>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>
